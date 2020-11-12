@@ -21,7 +21,7 @@ export const Blog = () => {
         <NavBar menuName='blog' />
       </header>
 
-      <h1>ATLAS Blog</h1>
+      <h1 id='home'>ATLAS Blog</h1>
       <h2 className='text__gradient2'>Dental & Cosmetic Alliance</h2>
       <h3>SubTitle h3</h3>
       <h4>SubTitle h4</h4>

@@ -28,7 +28,8 @@ export const NavBar = ({ menuName }) => {
   window.addEventListener('scroll', changeNavbarBackground);
 
   // MENU BUTTON TOGGLE
-  const handleClick = () => {
+  const handleClick = (e) => {
+    e.preventDefault();
     setShowMenu(!showMenu);
   };
 
