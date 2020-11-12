@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="71px" height="100px" version="1.1" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 7100 9958"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+   <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="3858" y1="7632" x2="6054" y2="7632">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+   <linearGradient id="id1" gradientUnits="userSpaceOnUse" x1="1040" y1="5236" x2="7100" y2="5236">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+   <linearGradient id="id2" gradientUnits="userSpaceOnUse" x1="5080" y1="6135" x2="1894" y2="2612">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+   <linearGradient id="id3" gradientUnits="userSpaceOnUse" x1="4746" y1="7632" x2="6054" y2="7632">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+   <linearGradient id="id4" gradientUnits="userSpaceOnUse" x1="0" y1="2419" x2="4867" y2="2419">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+   <linearGradient id="id5" gradientUnits="userSpaceOnUse" x1="0" y1="1424" x2="4307" y2="1424">
+    <stop offset="0" stop-opacity="1" stop-color="#BA8328"/>
+    <stop offset="0.329412" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="0.521569" stop-opacity="1" stop-color="#F8E78C"/>
+    <stop offset="0.658824" stop-opacity="1" stop-color="#F8E05B"/>
+    <stop offset="1" stop-opacity="1" stop-color="#BA8328"/>
+   </linearGradient>
+ </defs>
+ <g id="Capa_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path fill="url(#id0)" d="M5250 9958c589,-971 804,-1784 804,-2728 0,-607 -131,-1261 -365,-1924 -345,234 -710,439 -1074,645 -243,130 -495,271 -757,420 1047,738 1785,1700 1392,3587z"/>
+  <path fill="url(#id1)" d="M1644 9958c-579,-971 -803,-1784 -803,-2728 0,-2784 2830,-6716 4895,-6716 822,0 1364,831 1364,1550 0,4251 -6465,3055 -5456,7894z"/>
+  <path fill="url(#id2)" d="M1644 9958c-579,-971 -803,-1784 -803,-2728 0,-2784 2830,-6716 4895,-6716 234,0 439,65 626,177 -215,2625 -6465,4559 -4718,9267z"/>
+  <path fill="url(#id3)" d="M5250 9958c589,-971 804,-1784 804,-2728 0,-607 -131,-1261 -365,-1924 -308,205 -626,392 -943,570 747,1121 1121,2429 504,4082z"/>
+  <path fill="url(#id4)" d="M906 4839c-542,-766 -906,-1663 -906,-2634 0,-981 486,-2205 1943,-2205 981,0 1981,346 2924,233l-9 0c-1411,524 -2691,2177 -3335,3326 -234,392 -439,831 -617,1280z"/>
+  <path fill="url(#id5)" d="M56 2849c-37,-205 -56,-430 -56,-644 0,-981 486,-2205 1943,-2205 785,0 1588,224 2364,252 -1635,421 -3092,1187 -4251,2597z"/>
+ </g>
+</svg>
