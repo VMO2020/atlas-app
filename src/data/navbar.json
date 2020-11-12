@@ -1,0 +1,77 @@
+{
+  "Content-Type": "application/vnd.api+json",
+  "menu": [
+    {
+      "type": "home",
+      "id": "1",
+      "lang": "en",
+      "data": [
+        { "name": "treatments", "src": "/specialized-in" },
+        { "name": "team", "src": "/team" },
+        { "name": "prices", "src": "/prices" },
+        { "name": "blog", "src": "/blog" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    },
+    {
+      "type": "treatments",
+      "id": "2",
+      "lang": "en",
+      "data": [
+        { "name": "home", "src": "/" },
+        { "name": "team", "src": "/team" },
+        { "name": "prices", "src": "/prices" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    },
+    {
+      "type": "treat-item",
+      "id": "3",
+      "lang": "en",
+      "data": [
+        { "name": "home", "src": "/" },
+        { "name": "treatments", "src": "/specialized-in" },
+        { "name": "prices", "src": "/prices" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    },
+    {
+      "type": "team",
+      "id": "4",
+      "lang": "en",
+      "data": [
+        { "name": "home", "src": "/" },
+        { "name": "treatments", "src": "/specialized-in" },
+        { "name": "prices", "src": "/prices" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    },
+    {
+      "type": "homeOnly",
+      "id": "5",
+      "lang": "en",
+      "data": [{ "name": "home", "src": "/" }]
+    },
+    {
+      "type": "blog",
+      "id": "6",
+      "lang": "en",
+      "data": [
+        { "name": "home", "src": "/" },
+        { "name": "treatments", "src": "/specialized-in" },
+        { "name": "team", "src": "/team" },
+        { "name": "prices", "src": "/prices" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    },
+    {
+      "type": "prices",
+      "id": "7",
+      "lang": "en",
+      "data": [
+        { "name": "home", "src": "/" },
+        { "name": "contact", "src": "/contact" }
+      ]
+    }
+  ]
+}

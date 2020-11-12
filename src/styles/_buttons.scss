@@ -1,0 +1,47 @@
+.btn {
+    border-radius: 0.2em;
+    cursor: pointer;
+    display: inline-block;
+    font-family: $buttons;
+    @include font-size(13px, 21px);
+    padding: 0 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s ease;
+   }
+   
+   .btn-main{
+      @include button-bg($mainColor);
+      border: 1px solid $mainColor;
+      color: $Dark;
+      line-height: calc(1vw + 2rem);
+      margin: 0.25em 0.5em;
+   }
+   
+   .btn-main-ol {
+      @include button-bg-ol($mainColor, $Dark);
+      background: transparent;
+      border: 2px solid $mainColor;
+      color: $mainColor;
+      line-height: calc(1vw + 1.9rem);
+      margin: 0.25em 0.5em;
+   }
+
+   .btn-main-ol-a {
+      @include button-bg-ol-a($mainColor, $Dark);
+      background: transparent;
+      border: 2px solid $mainColor;
+      color: $mainColor;
+      line-height: calc(1vw + 1.9rem);
+      margin: 0.25em 0.5em;
+      z-index: 1;
+   }
+
+   
+
+   
+   
+   
+   

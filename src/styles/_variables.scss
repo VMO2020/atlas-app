@@ -1,0 +1,73 @@
+// RESPONSIVE (VIEWPORT SIZES)
+$minWidth:  600px !default; 
+$maxWidth: 1200px !default;
+
+
+// Basic Colors
+$Dark: #222831;     // My Black: rgb(34,40,49)
+$MedDark: #393E46;  // My Dark Gray: rgb(57,62,70)
+$MedLight: #8e8e90; // My Gray: Silver: rgb(142,142,144)
+$Light: #F7F7F7;    // My White:(247,247,247)
+
+// Main Color
+$mainDark:  #a37e2c; // rgb(163,126,44)
+$mainMDark: #c49c2d; // rgb(196,156,45)
+$mainColor: #d4af37; // rgb(212,175,55)
+$mainLight: #f7ef8a; // rgb(247,239,138)
+
+// Navbar
+$navbarColor: rgba(34,40,49, 0.98);
+
+// Deg Colors backgrounds
+$darkDeg: linear-gradient(90deg, $Dark, $MedDark);
+$darkDeg2: linear-gradient(90deg, $MedDark, $Dark);
+$mainDeg: linear-gradient(to top, $mainDark 0%, $mainColor 50%, $mainColor 50%, $mainLight 100%);
+$esfere: radial-gradient(at top left, $mainLight, $mainDark);
+$esfere2: radial-gradient(at top left, $mainLight, darken($mainDark, 30%));
+
+// Font-Family
+$logo: 'Cardo', serif;
+$navbar: 'Cardo', serif;
+$title:'Cardo', serif;
+$subTitle: 'Cormorant Garamond', serif;
+$subTitle2: 'Poppins', sans-serif;
+$body: 'Poppins', sans-serif;
+$buttons: 'Poppins', sans-serif;
+
+// PAGES
+$section-pad: 150px 0;
+$space: 16px; // margin: 0 0 $space; -sides spaces-
+$space-md: calc($space * 2);
+$space-lg: calc($space * 3);
+
+// COMPONENTS
+$border-rad: 8px;
+
+// SHADOWS
+$shadow: 0 0 1em rgba(0, 0, 0, 0.25);
+$card-shadow: 0 2px 2px rgba(0, 0, 0, 0.8);
+$card-shadow-h: 0 12px 16px rgba(0, 0, 0, 0.8);
+
+// Google Colors
+$white: #fff;
+$google-blue: #4285f4;
+$button-active-blue: #1669f2;
+
+// REFERENCES -------------------------------------------------
+// GOLD Palette
+$mainGP:  #a37e2c;  // Dark Gold
+$mainGP1: #c49c2d;  // Medium Gold
+$mainGP2: #d4af37;  // Gold
+$mainGP3: #f7ef8a;  // Light Gold
+
+// Highlight Palette
+$mainHP: #D4AF37;
+$mainHP2: #554516;
+$mainHP3: #DFE0DF;
+$mainHP4: #402E32;
+
+// Discreet Palette
+$mainDP: #D4AF37;
+$mainDP2: #A18F65;
+$mainDP3: #FFF9EA;
+$mainDP4: #402E32;

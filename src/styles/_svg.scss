@@ -1,0 +1,15 @@
+.svc__icon{
+    svg{
+        cursor: pointer;
+        fill: $mainColor;
+        @include size(32px, 48px, 1, 1);
+        margin: 0 10px;
+    }
+    svg:hover,
+    svg:focus{
+         fill: $mainDark;       
+    }
+    svg:active{
+        transform: scale(0.95);
+    }
+}

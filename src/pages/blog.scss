@@ -1,0 +1,23 @@
+@import '../styles/styles.scss';
+
+.general__container.blog{
+    background: $darkDeg;
+    color: $mainColor;
+    // height: 100vh;
+    padding: 5rem 1rem;
+
+    .blog__icon{
+        margin: 20px 0;
+    }
+
+    
+    // &::before{
+    //     content: "";
+    //     display: block;
+    //     margin: 20px 0;
+    //     width: 60px;
+    //     height: 60px;
+    //     border-radius: 50%;
+    //     background: $esfere2;
+    // }
+}

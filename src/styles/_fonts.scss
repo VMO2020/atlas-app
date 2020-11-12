@@ -1,0 +1,53 @@
+// VARIABLE ---------------------------------------------------------
+// ROBOTO FLEX v: font-family: 'Roboto Flex', sans-serif;
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url('../fonts/Roboto_Flex_v/RobotoFlex[slnt\,wdth\,wght\,opsz]-temp.ttf') format('woff2 supports variations'),
+         url('../fonts/Roboto_Flex_v/RobotoFlex[slnt\,wdth\,wght\,opsz].ttf') format('woff2-variations');
+	font-weight: 100 1000;
+	font-stretch: 25% 151%;
+}
+
+// Cinzel v: font-family: 'Cinzel', serif;
+@font-face{
+    font-family: 'Cinzel';
+    src: url('../fonts/Cinzel_v/Cinzel-VariableFont_wght.ttf');
+    font-weight: 400 900;
+}
+
+// Vollkorn v: font-family: 'Vollkorn', serif;
+@font-face{
+    font-family: 'Vollkorn', serif;
+    src: url('../fonts/Vollkorn_v/Vollkorn-VariableFont_wght.ttf');
+    font-weight: 400 900;
+}
+// Literarta v: font-family: 'Literata', serif;
+@font-face{
+    font-family: 'Literata';
+    src: url('../fonts/Literata_v/Literata-VariableFont_opsz\,wght.ttf');
+    font-weight: 200 900;
+}
+
+// FIXED ---------------------------------------------------------
+// Cardo: font-family: 'Cardo', serif;
+@font-face{
+    font-family: 'Cardo';
+    src: url('../fonts/Cardo/Cardo-Regular.ttf');
+}
+// Cormorant Garamond: font-family: 'Cormorant Garamond', serif;
+@font-face{
+    font-family: 'Cormorant Garamond';
+    src: url('../fonts/Cormorant_Garamond/CormorantGaramond-Light.ttf');
+}
+
+
+// IMPORTADAS --------------------------------------------------------------------
+
+// POPPINS: font-family: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+// MONTSERRAT: font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+// ROBOTO MONO: font-family: 'Roboto Mono', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,300;0,500;0,700;1,100;1,300;1,500;1,600;1,700&display=swap');

@@ -1,0 +1,54 @@
+// font-size( minSize, maxSize)
+
+body{
+  
+    h1{
+        font-family: $title; 
+        @include font-size(32px, 64px);
+        font-weight: 500;
+        line-height: 0.8em;
+    }
+    h2{
+        font-family: $subTitle; 
+        @include font-size(29px, 48px);
+        font-weight: 200;
+        line-height: 0.8em;
+    }
+    h3{
+        font-family: $subTitle2; 
+        @include font-size(24px, 40px);
+        font-weight: 200;
+        line-height: 1em;
+    }
+    h4{
+        font-family: $subTitle2;
+        @include font-size(20px, 32px);
+        font-weight: 200;
+        line-height: 1.2em;
+    }
+    p, h5, h6{
+        font-family: $body;
+        @include font-size(13px, 21px);
+        font-weight: 200;
+        line-height: 1.4em;
+    }
+    
+    .text__gradient {
+        background: linear-gradient(-120deg, $mainDark 0%, $mainColor 50%, $mainColor 50%, $mainLight 100%);
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .text__gradient2 {
+        background: linear-gradient(to right, $mainColor 0%, $mainLight 50%, $mainLight 50%, $mainColor 100%);
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    
+    
+    
+}

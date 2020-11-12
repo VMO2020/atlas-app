@@ -1,0 +1,138 @@
+@import '../styles/styles.scss';
+
+nav.navbar__navbar.navbar__active {
+    background: $navbarColor;
+    box-shadow: 0 2px 5px #777,
+      0 -2px 5px #999;
+}
+
+nav.navbar__navbar{
+    position: fixed;
+    top: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    width: 100%;
+    max-width: $maxWidth;
+    height: 3em;
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: 0.4s ease;
+
+    .navbar__logo{
+        display: flex;
+        align-items: center;
+
+        .navbar__logo-icon{
+            @include size(20px,40px,1,1);
+            margin-right: 0.2em;
+        }
+    
+        span{
+            @include font-size(25px, 35px);
+            color: $mainColor;
+            font-family: $logo;
+            
+        }
+    }
+
+    .navbar__toggle{
+        display: flex;
+        align-items: center;
+        
+        svg{
+            cursor: pointer;
+            fill: $mainColor;
+            @include size(28px,40px,1,1);
+            margin: 0 10px;
+        }
+        svg:hover,
+        svg:focus{
+             fill: $mainDark;       
+        }
+        svg:active{
+            transform: scale(0.95);
+        }
+
+        span{
+            color: $mainColor;
+            margin-right: 1em;
+            font-family: $subTitle;
+            font-size: 20px;
+        }
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        
+        .navbar__menu-links{
+
+            .navbar__menu-link{
+                color: $mainColor;
+                @include font-size(16px, 24px);
+                font-family: $navbar;
+                padding: 0 0.5em;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: color 0.3 ease;
+    
+                &:hover{
+                    color: $Dark;
+                    background-color: $mainColor;
+                }
+                
+            }
+        }
+    }
+    .navbar__menu.navbar__show{
+        position: fixed;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        width: 100%;
+        height: 100vh;
+        background: $Dark;
+        text-align: center;
+        padding: 6em 1em;
+        z-index: -1;
+
+    .navbar__menu-links{
+        .navbar__menu-link{
+            @include font-size(24px, 36px);
+        }
+    }
+
+    }
+}
+
+// NAVBAR FOR TABLETS & DESKTOPS
+@include mQ(650px) {
+
+nav.navbar__navbar{
+    
+    .navbar__toggle{
+        display: none;
+        
+    }
+
+    .navbar__menu{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        
+        .navbar__menu-links{
+
+            .navbar__menu-link{
+                
+                
+            }
+        }
+    }
+}
+
+}
