@@ -9,8 +9,8 @@ import { ReactComponent as Icon3 } from '../icons/social/facebook.svg';
 import { ReactComponent as Icon4 } from '../icons/social/instagram.svg';
 import { ReactComponent as Icon5 } from '../icons/social/twitter.svg';
 import { ReactComponent as Icon6 } from '../icons/social/youtube.svg';
-import { ReactComponent as Icon7 } from '../icons/close.svg';
-import { ReactComponent as Icon8 } from '../icons/menu.svg';
+import { ReactComponent as Icon7 } from '../icons/nav/close.svg';
+import { ReactComponent as Icon8 } from '../icons/nav/menu.svg';
 import { ReactComponent as Icon9 } from '../icons/contact/call.svg';
 import { ReactComponent as Icon10 } from '../icons/contact/placeholder.svg';
 

@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
 import logoAtlas from '../icons/logoAtlas.svg';
-import { ReactComponent as Close } from '../icons/close.svg';
-import { ReactComponent as Menu } from '../icons/menu.svg';
+import { ReactComponent as Close } from '../icons/nav/close.svg';
+import { ReactComponent as Menu } from '../icons/nav/menu.svg';
 
 export const NavBar = ({ menuName }) => {
   const [navbar, setNavbar] = useState(false);
