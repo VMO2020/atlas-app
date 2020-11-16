@@ -11,7 +11,7 @@ export default function validateLogin(values) {
   } else if (!namePattern.test(values.name)) {
     errors.name = 'Name is invalid';
   } else if (values.name.length < 3) {
-    errors.name = 'Name needs to be more than 3 characters';
+    errors.name = 'Name lenght is invalid > 3';
   }
   // Email
   if (!values.email) {
@@ -29,7 +29,7 @@ export default function validateLogin(values) {
   if (!values.password2) {
     errors.password2 = 'Password2 is required';
   } else if (values.password2 !== values.password) {
-    errors.password2 = 'Password2 needs to match Password';
+    errors.password2 = 'Passwords needs to match';
   }
   return errors;
 }

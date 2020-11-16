@@ -61,7 +61,7 @@ const LoginForm = () => {
           </div>
         </div>
         <div className='form-item'>
-          <label>Password2</label>
+          <label>Confirm Password</label>
           <div>
             <input
               className={`${errors.password2 && 'inputError'}`}
