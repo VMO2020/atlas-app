@@ -1,12 +1,17 @@
 import { useState, useEffect } from 'react';
 
 const useForm = (callback, validate) => {
-  const [values, setValues] = useState({ name: '', email: '', password: '' });
+  const [values, setValues] = useState({
+    name: '',
+    email: '',
+    password: '',
+    password2: '',
+  });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const reset = () => {
-    setValues({ name: '', email: '', password: '' });
+    setValues({ name: '', email: '', password: '', password2: '' });
   };
 
   const handleChange = (event) => {

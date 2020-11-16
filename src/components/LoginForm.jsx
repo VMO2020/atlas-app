@@ -60,6 +60,19 @@ const LoginForm = () => {
             {errors.password && <p className='error'>{errors.password}</p>}
           </div>
         </div>
+        <div className='form-item'>
+          <label>Password2</label>
+          <div>
+            <input
+              className={`${errors.password2 && 'inputError'}`}
+              name='password2'
+              type='password'
+              value={values.password2}
+              onChange={handleChange}
+            />
+            {errors.password2 && <p className='error'>{errors.password2}</p>}
+          </div>
+        </div>
         <button type='submit' className='btn btn-form'>
           Submit
         </button>
