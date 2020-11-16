@@ -36,7 +36,8 @@
   background: $bg;
   &:hover,
   &:focus {
-    background:lighten($bg,10%);
+    background:lighten($bg,20%);
+    border: 2px solid $mainColor;
     transition: all 0.3s ease;
   }
   &:active {

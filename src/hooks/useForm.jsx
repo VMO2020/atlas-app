@@ -1,24 +1,29 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
 const useForm = (callback, validate) => {
-  const [values, setValues] = useState({ email: "", password: "" });
+  const [values, setValues] = useState({ name: '', email: '', password: '' });
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = event => {
+  const reset = () => {
+    setValues({ name: '', email: '', password: '' });
+  };
+
+  const handleChange = (event) => {
     const { name, value } = event.target;
     setValues({
       ...values,
-      [name]: value
+      [name]: value,
     });
   };
 
-  const handleSubmit = event => {
+  const handleSubmit = (event) => {
     event.preventDefault();
     setErrors(validate(values));
     setIsSubmitting(true);
   };
 
+  // When ever erros change:
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
       callback();
@@ -29,7 +34,8 @@ const useForm = (callback, validate) => {
     handleChange,
     handleSubmit,
     values,
-    errors
+    errors,
+    reset,
   };
 };
 

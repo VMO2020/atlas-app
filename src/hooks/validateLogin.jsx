@@ -1,3 +1,5 @@
+// TODO: Add Password 2 and validate
+
 export default function validateLogin(values) {
   let namePattern = /^[a-zA-Z ]+$/;
   let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;

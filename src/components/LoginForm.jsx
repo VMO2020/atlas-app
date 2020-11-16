@@ -1,22 +1,27 @@
 import React from 'react';
 import useForm from '../hooks/useForm';
 import validate from '../hooks/validateLogin';
-import './form.scss';
+import './loginform.scss';
+
+// TODO: Add Password 2 and validate
+// TODO: scss styles
+// TODO: Manage SUBMIT with Firebase
 
 const LoginForm = () => {
-  const { handleChange, handleSubmit, values, errors } = useForm(
+  const { handleChange, handleSubmit, values, errors, reset } = useForm(
     submit,
     validate
   );
 
   function submit() {
     console.log('Submitted Succesfully');
+    reset();
   }
 
   return (
-    <div>
+    <>
       <form onSubmit={handleSubmit} noValidate>
-        <div>
+        <div className='form-item'>
           <label>Name</label>
           <div>
             <input
@@ -29,7 +34,7 @@ const LoginForm = () => {
             {errors.name && <p className='error'>{errors.name}</p>}
           </div>
         </div>
-        <div>
+        <div className='form-item'>
           <label>Email</label>
           <div>
             <input
@@ -42,11 +47,11 @@ const LoginForm = () => {
             {errors.email && <p className='error'>{errors.email}</p>}
           </div>
         </div>
-        <div>
+        <div className='form-item'>
           <label>Password</label>
           <div>
             <input
-              className={`${errors.email && 'inputError'}`}
+              className={`${errors.password && 'inputError'}`}
               name='password'
               type='password'
               value={values.password}
@@ -55,9 +60,11 @@ const LoginForm = () => {
             {errors.password && <p className='error'>{errors.password}</p>}
           </div>
         </div>
-        <button type='submit'>Submit</button>
+        <button type='submit' className='btn btn-form'>
+          Submit
+        </button>
       </form>
-    </div>
+    </>
   );
 };
 

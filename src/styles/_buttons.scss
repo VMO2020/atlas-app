@@ -39,6 +39,13 @@
       z-index: 1;
    }
 
+   .btn-form{
+      @include button-bg($mainColor);
+      border: 1px solid $mainColor;
+      color: $Dark;
+      line-height: calc(1vw + 1.2rem);
+      margin: 0.5em 0;
+   }
    
 
    
