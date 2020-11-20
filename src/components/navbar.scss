@@ -1,12 +1,12 @@
 @import '../styles/styles.scss';
 
-nav.navbar__navbar.navbar__active {
+nav.navbar.navbar__active {
     background: $navbarColor;
     box-shadow: 0 2px 5px #777,
       0 -2px 5px #999;
 }
 
-nav.navbar__navbar{
+nav.navbar{
     position: fixed;
     top: 3px;
     left: 50%;
@@ -114,7 +114,7 @@ nav.navbar__navbar{
 // NAVBAR FOR TABLETS & DESKTOPS
 @include mQ(768px) {
 
-    nav.navbar__navbar{
+    nav.navbar{
         
         .navbar__toggle{
             display: none;

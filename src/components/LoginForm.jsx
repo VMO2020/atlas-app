@@ -3,28 +3,36 @@ import useForm from '../hooks/useForm';
 import validate from '../hooks/validateLogin';
 import './loginform.scss';
 
-// TODO: Add Password 2 and validate
 // TODO: scss styles
 // TODO: Manage SUBMIT with Firebase
 
 const LoginForm = () => {
+  const initialForm = {
+    name: '',
+    email: '',
+    password: '',
+    password2: '',
+  };
   const { handleChange, handleSubmit, values, errors, reset } = useForm(
     submit,
-    validate
+    validate,
+    initialForm
   );
 
   function submit() {
+    console.log(values.name, values.email);
     console.log('Submitted Succesfully');
     reset();
   }
 
   return (
     <>
-      <form onSubmit={handleSubmit} noValidate>
+      <form onSubmit={handleSubmit} noValidate id='loginform'>
         <div className='form-item'>
           <label>Name</label>
           <div>
             <input
+              id='name'
               className={`${errors.name && 'inputError'}`}
               name='name'
               type='text'
@@ -38,6 +46,7 @@ const LoginForm = () => {
           <label>Email</label>
           <div>
             <input
+              id='email'
               className={`${errors.email && 'inputError'}`}
               name='email'
               type='email'
@@ -51,6 +60,7 @@ const LoginForm = () => {
           <label>Password</label>
           <div>
             <input
+              id='password'
               className={`${errors.password && 'inputError'}`}
               name='password'
               type='password'

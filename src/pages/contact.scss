@@ -1,8 +1,30 @@
 @import '../styles/styles.scss';
 
 .general__container.contact{
+    position: relative;
     background: $darkDeg;
     color: $mainColor;
-    // height: 100vh;
-    padding: 5rem 1rem;
+    min-height: calc(100vh - 5rem);
+    padding-top: 5rem;
+    // border: 2px solid green;
+    
+    main{
+        background-color: $Light;
+        color: $mainDark;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+
+        strong{
+            @include font-size(32px, 64px);
+        }
+        p{
+            font-style: italic;
+            margin-bottom: 2em;
+        }
+    }
+    footer{
+      
+    }
 }

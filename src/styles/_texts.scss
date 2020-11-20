@@ -4,25 +4,25 @@ body{
   
     h1{
         font-family: $title; 
-        @include font-size(32px, 64px);
+        @include font-size(22px, 64px);
         font-weight: 500;
         line-height: 0.8em;
     }
     h2{
         font-family: $subTitle; 
-        @include font-size(29px, 48px);
-        font-weight: 200;
+        @include font-size(20px, 48px);
+        font-weight: 400;
         line-height: 0.8em;
     }
     h3{
         font-family: $subTitle2; 
-        @include font-size(24px, 40px);
+        @include font-size(18px, 40px);
         font-weight: 200;
         line-height: 1em;
     }
     h4{
         font-family: $subTitle2;
-        @include font-size(20px, 32px);
+        @include font-size(16px, 32px);
         font-weight: 200;
         line-height: 1.2em;
     }
@@ -43,6 +43,14 @@ body{
 
     .text__gradient2 {
         background: linear-gradient(to right, $mainColor 0%, $mainLight 50%, $mainLight 50%, $mainColor 100%);
+        text-shadow: none;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+
+    .text__gold {
+        background: linear-gradient(to right, #462523 0%, #cb9b51 22%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 78%, #462523 100%);
         text-shadow: none;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;

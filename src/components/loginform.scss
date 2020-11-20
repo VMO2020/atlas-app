@@ -5,15 +5,17 @@ form{
     border-radius: 0.5em;
 
     .form-item{
-        margin: 1em;
+        margin: 0.5em 1em;
+
         label,
         input{
             @include font-size(13px, 21px);
         }
         input{
-            margin-bottom: 0.5em;
+            width: 100%;
         }
         .error{
+            margin: 0;
             @include font-size(10px, 18px);
             font-style: italic;
             color: red;

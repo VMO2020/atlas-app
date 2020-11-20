@@ -1,0 +1,49 @@
+@import '../styles/styles.scss';
+
+.container-form{
+    color: $mainColor;
+    width: 100%;
+    margin-bottom: 2em;
+    // border: 2px solid blue;
+
+    form{
+        border: 2px solid $mainColor;
+        border-radius: 0.5em;
+        background-color: $Dark;
+        
+    
+        .form-item{
+            margin: 0.5em 1em;
+    
+            label,
+            input{
+                @include font-size(13px, 21px);
+            }
+            input{
+                width: 100%;
+            }
+            .error{
+                margin: 0;
+                @include font-size(12px, 18px);
+                font-style: italic;
+                color: red;
+            }
+            .inputError {
+                border:1px solid red;
+            }
+        }
+        .btn{
+            margin-top: 0;
+            margin-left: 1em;
+            margin-bottom: 1em;
+        }
+        .checkbox{
+            margin: 1em;
+
+            .checkbox-item{
+                margin: 0 0.5em;
+            }
+        }
+             
+    }
+}
