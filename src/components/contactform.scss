@@ -10,8 +10,8 @@
         border: 2px solid $mainColor;
         border-radius: 0.5em;
         background-color: $Dark;
+        max-width: calc(600px - 3em);
         
-    
         .form-item{
             margin: 0.5em 1em;
     
@@ -31,18 +31,51 @@
             .inputError {
                 border:1px solid red;
             }
+            textarea{
+                width: 100%;
+                min-height: 5.1em;
+            }
         }
-        .btn{
-            margin-top: 0;
-            margin-left: 1em;
-            margin-bottom: 1em;
-        }
+        
         .checkbox{
             margin: 1em;
 
-            .checkbox-item{
-                margin: 0 0.5em;
+            h3{
+                @include font-size(16px, 28px);
             }
+            .checkbox-item{
+                display: none;
+            }
+            label{
+                @include font-size(14px, 22px);
+                margin-bottom: 0.3em;
+                cursor: pointer;
+                margin-right: 1em;
+                display: inline-flex;
+              
+                span{
+                    background-color: $Light;
+                    border: 1px solid $mainColor;
+                    border-radius: 3px;
+                    color: transparent;
+                    margin-right: 0.5em;
+                    height: 1em;
+                }
+            }
+            .checkbox-item:checked + label{
+                span{
+                    color: $mainColor;
+                    background-color: transparent;
+                    border: transparent;
+                }
+            }
+            
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            margin-left: .3em;
+            margin-right: 1em;
         }
              
     }

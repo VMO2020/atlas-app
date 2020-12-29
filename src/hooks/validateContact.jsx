@@ -40,6 +40,10 @@ export default function validateContact(values) {
   } else if (values.postcode.length < 5) {
     errors.postcode = 'Please Enter Valid Postcode';
   }
+  // Message
+  if (!values.message) {
+    errors.message = 'Please enter your Message';
+  }
 
   return errors;
 }

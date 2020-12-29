@@ -1,10 +1,11 @@
 import React from 'react';
-import useContact from '../hooks/useContact';
+import useForm from '../hooks/useForm';
 import validate from '../hooks/validateContact';
 import './contactform.scss';
 
-// TODO: scss styles
 // TODO: Manage SUBMIT with Firebase
+// TODO: email form with EmailJs
+// TODO: customize alert
 
 const ContactForm = () => {
   const initialForm = {
@@ -13,16 +14,33 @@ const ContactForm = () => {
     email: '',
     phone: '',
     postcode: '',
+    message: '',
+    c1: false,
+    c2: false,
+    c3: false,
+    c4: false,
+    c5: false,
   };
-  const { handleChange, handleSubmit, values, errors, reset } = useContact(
-    submit,
-    validate,
-    initialForm
-  );
+  const {
+    handleChange,
+    handleSubmit,
+    handleAllChecked,
+    values,
+    errors,
+    reset,
+  } = useForm(submit, validate, initialForm);
 
   function submit() {
-    console.log(values.name, values.email, values.date);
+    console.log(
+      values.name,
+      values.email,
+      values.message,
+      values.c1,
+      values.c2,
+      values.c3
+    );
     console.log('Submitted Succesfully');
+    alert('Submitted Succesfully');
     reset();
   }
 
@@ -30,7 +48,9 @@ const ContactForm = () => {
     <section className='container-form'>
       <form onSubmit={handleSubmit} noValidate id='loginform'>
         <div className='form-item'>
-          <label>Name</label>
+          <label>
+            Name <small>*</small>
+          </label>
           <div>
             <input
               id='name'
@@ -45,7 +65,9 @@ const ContactForm = () => {
         </div>
 
         <div className='form-item'>
-          <label>Date of Birth</label>
+          <label>
+            Date of Birth <small>*</small>
+          </label>
           <div>
             <input
               id='date'
@@ -60,7 +82,9 @@ const ContactForm = () => {
         </div>
 
         <div className='form-item'>
-          <label>Email</label>
+          <label>
+            Email <small>*</small>
+          </label>
           <div>
             <input
               id='email'
@@ -75,7 +99,9 @@ const ContactForm = () => {
         </div>
 
         <div className='form-item'>
-          <label>Phone number</label>
+          <label>
+            Phone number <small>*</small>
+          </label>
           <div>
             <input
               id='phone'
@@ -90,7 +116,9 @@ const ContactForm = () => {
         </div>
 
         <div className='form-item'>
-          <label>Postcode and First line of Address</label>
+          <label>
+            Postcode and First line of Address <small>*</small>
+          </label>
           <div>
             <input
               id='postcode'
@@ -105,53 +133,92 @@ const ContactForm = () => {
         </div>
 
         <div className='checkbox'>
-          <h3>I'm Interested in * :</h3>
+          <h3>I'm Interested in:</h3>
+
           <input
+            id='checkbox1'
             className='checkbox-item'
             name='c1'
             type='checkbox'
-            value='Cosmetic Dentristry'
-            onChange={handleChange}
+            value={values.check}
+            onChange={handleAllChecked}
             // checked
           />
-          {' Cosmetic Dentistry '}
+          <label htmlFor='checkbox1'>
+            <span>✓</span>Cosmetic Dentistry
+          </label>
+
           <input
+            id='checkbox2'
             className='checkbox-item'
             name='c2'
             type='checkbox'
-            value='Braces'
-            onChange={handleChange}
+            value={values.check}
+            onChange={handleAllChecked}
           />
-          {' Braces '} <br />
+          <label htmlFor='checkbox2'>
+            <span>✓</span>Braces
+          </label>
+
           <input
+            id='checkbox3'
             className='checkbox-item'
             name='c3'
             type='checkbox'
-            value='Whitening'
-            onChange={handleChange}
+            value={values.check}
+            onChange={handleAllChecked}
           />
-          {' Whitening '}
+          <label htmlFor='checkbox3'>
+            <span>✓</span>Whitening
+          </label>
           <input
+            id='checkbox4'
             className='checkbox-item'
             name='c4'
             type='checkbox'
-            value='Implants'
-            onChange={handleChange}
+            value={values.check}
+            onChange={handleAllChecked}
           />
-          {' Implants '}
+          <label htmlFor='checkbox4'>
+            <span>✓</span>Implants
+          </label>
+
           <input
+            id='checkbox5'
             className='checkbox-item'
             name='c5'
             type='checkbox'
-            value='Other'
-            onChange={handleChange}
+            value={values.check}
+            onChange={handleAllChecked}
           />
-          {' Other '}
+          <label htmlFor='checkbox5'>
+            <span>✓</span>Other
+          </label>
         </div>
 
-        <button type='submit' className='btn btn-form'>
-          Submit
-        </button>
+        <div className='form-item'>
+          <label>
+            Your Message <small>*</small>
+          </label>
+          <div>
+            <textarea
+              id='message'
+              className={`${errors.message && 'inputError'}`}
+              name='message'
+              type='text'
+              value={values.message}
+              onChange={handleChange}
+            ></textarea>
+            {errors.message && <p className='error'>{errors.message}</p>}
+          </div>
+        </div>
+
+        <div className='bottom'>
+          <button type='submit' className='btn btn-form'>
+            Submit
+          </button>
+          <p> * Required</p>
+        </div>
       </form>
     </section>
   );

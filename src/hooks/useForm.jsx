@@ -19,6 +19,15 @@ const useForm = (callback, validate, initialForm) => {
     });
   };
 
+  const handleAllChecked = (event) => {
+    const { name } = event.target;
+    const check = event.target.checked;
+    setValues({
+      ...values,
+      [name]: check,
+    });
+  };
+
   // Prevent default page to be rendered & put errors values in "errors"
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -36,6 +45,7 @@ const useForm = (callback, validate, initialForm) => {
   return {
     handleChange,
     handleSubmit,
+    handleAllChecked,
     values,
     errors,
     reset,
