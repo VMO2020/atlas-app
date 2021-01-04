@@ -31,7 +31,7 @@ export const Contact = () => {
       </header>
       <main>
         {/* <h1>ATLAS Dental & Cosmetic Alliance</h1> */}
-        <strong>Contact Us</strong>
+        <strong>CONTACT US</strong>
         <p>We have appointments available for new patients</p>
         <ContactForm />
       </main>

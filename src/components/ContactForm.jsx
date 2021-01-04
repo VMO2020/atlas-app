@@ -31,16 +31,35 @@ const ContactForm = () => {
   } = useForm(submit, validate, initialForm);
 
   function submit() {
-    console.log(
-      values.name,
-      values.email,
-      values.message,
-      values.c1,
-      values.c2,
-      values.c3
-    );
+    const data =
+      'Name:  ' +
+      values.name +
+      '  DateOfBirth: ' +
+      values.date +
+      '  Email: ' +
+      values.email +
+      '  Phone: ' +
+      values.phone +
+      '  PC: ' +
+      values.postcode +
+      '  Interested: ' +
+      `${values.c1 ? 'Cosmetic Dentistry' : ''}` +
+      ' ' +
+      `${values.c2 ? 'Braces' : ''}` +
+      ' ' +
+      `${values.c3 ? 'Whitening' : ''}` +
+      ' ' +
+      `${values.c4 ? 'Implants' : ''}` +
+      ' ' +
+      `${values.c5 ? 'Other' : ''}` +
+      '   Message: ' +
+      values.message;
+
     console.log('Submitted Succesfully');
-    alert('Submitted Succesfully');
+    // alert('Submitted Succesfully');
+    window.open(
+      'mailto:victor.ottati@gmail.com?subject=ContactForm&body=' + data
+    );
     reset();
   }
 
