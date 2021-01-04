@@ -1,6 +1,6 @@
 export default function validateContact(values) {
   let namePattern = /^[a-zA-Z ]+$/;
-  let emailPattern = /^[a-z0-9._%+-]+@[^ ]+\.[a-z]{2,3}$/;
+  let emailPattern = /^[a-z0-9._%+-]+@[^ ]+\.[a-z]{2,4}$/;
 
   // AGE
   let today = new Date();
