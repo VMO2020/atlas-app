@@ -23,6 +23,8 @@ import { ReactComponent as Icon7 } from '../icons/nav/close.svg';
 import { ReactComponent as Icon8 } from '../icons/nav/menu.svg';
 import { ReactComponent as Icon9 } from '../icons/contact/call.svg';
 import { ReactComponent as Icon10 } from '../icons/contact/placeholder.svg';
+import { ReactComponent as Icon11 } from '../icons/contact/message.svg';
+import { ReactComponent as Icon12 } from '../icons/contact/phone.svg';
 
 // SEO
 const meta = {
@@ -76,6 +78,8 @@ export const Blog = () => {
           <Icon8 />
           <Icon9 />
           <Icon10 />
+          <Icon11 />
+          <Icon12 />
         </div>
       </main>
       <LoginForm />

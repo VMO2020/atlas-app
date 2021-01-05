@@ -6,7 +6,6 @@
       "id": "1",
       "lang": "en",
       "data": [
-        { "name": "home", "src": "/" },
         { "name": "treatments", "src": "/specialized-in" },
         { "name": "team", "src": "/team" },
         { "name": "prices", "src": "/prices" },

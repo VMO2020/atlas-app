@@ -13,13 +13,19 @@
         align-items: center;
         flex-direction: column;
         
-
         strong{
             @include font-size(32px, 64px);
         }
-        p{
+        h5{
             font-style: italic;
             margin-bottom: 2em;
+            color: $Dark;
+        }
+        .contacts-box{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1Fr));
+            grid-gap: 1em;
         }
     }
     footer{

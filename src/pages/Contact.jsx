@@ -2,6 +2,7 @@ import React from 'react';
 
 // Components
 import { NavBar } from '../components/NavBar';
+import ContactData from '../components/ContactData';
 import ContactForm from '../components/ContactForm';
 import { Footer } from '../components/Footer';
 
@@ -32,8 +33,11 @@ export const Contact = () => {
       <main>
         {/* <h1>ATLAS Dental & Cosmetic Alliance</h1> */}
         <strong>CONTACT US</strong>
-        <p>We have appointments available for new patients</p>
-        <ContactForm />
+        <h5>We have appointments available for new patients</h5>
+        <div className='contacts-box'>
+          <ContactData />
+          <ContactForm />
+        </div>
       </main>
       <footer>
         <Footer />
